@@ -1,0 +1,35 @@
+Color Maze Challenge
+Originally from: https://www.reddit.com/r/dailyprogrammer/comments/6qutez/20170801_challenge_325_easy_color_maze/
+
+Problem/ Purpose:
+The goal of this project is to use a provided key to traverse a colored maze from bottom to top.
+
+Requirements and Restrictions:
+1) The path can only be traversed along the given colors.
+2) The path cannot move diagonally. It can only move up, down, left, and right.
+3) The tiles may be visited more than once.
+4) The path must start at the bottom row.
+5) The maze is completed once the line reaches the top row.
+6) All mazes will be in the shape of a square
+7) The first line of text for every maze is the legend
+
+Design:
+
+----------------------------------
+|         ColorMaze              |
+---------------------------------|
+| legend : char Array            |
+| maze : nested char Array       |
+| size : int                     |
+| path : String                  |
+---------------------------------|
+| initalizeMaze : void           |
+| setLegend : void               |
+| legendString : String          |
+| setMaze : void                 |
+| mazeString : String            |
+| findPath : void                |
+| printPath : String             |
+| isAllowed : boolean            |
+| recursiveTraversal() : boolean |
+----------------------------------
